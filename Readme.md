@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Глеб Щукин](https://up.htmlacademy.ru/adaptive/13/user/190928).
-* Наставник: `Неизвестно`.
+* Наставник: "Евгений Старшинов".
 
 ---
 
