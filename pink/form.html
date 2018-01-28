@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+<body>
+
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      Pink
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list sit-list">
+        <li class="site-list__item">
+          <a href="#">Download</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Advantages</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Price</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Contacts</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Reivew</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Information</a>
+        </li>
+      </ul>
+    </nav>
+    < class="page-header__title">
+      Конкурс на самое бузбашенное путешествие с Пинк
+    </>
+  </header>
+
+  <main class="page-main">
+
+    <h1 class="visually-hidden">
+      Форма регистрации.
+    </h1>
+    <p class="page-main__discription">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните
+    </p>
+
+    <form class="page-main__form form-registry" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-registry__wrapper">
+
+        <section class="form-registry__section form-registry__section--name-info">
+          <h2 class="visually-hidden">Пожалуйста, представтесь</h2>
+          <div class="form-registry__field form-registry__field--text">
+            <label for="surname">Фамилия:</label>
+            <input type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+          </div>
+          <div class="form-registry__field form-registry__field--text">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" id="name" placeholder="Введите ваше имя *">
+          </div>
+          <div class="form-registry__field form-registry__field--text">
+            <label for="second-name">Имя:</label>
+            <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
+          </div>
+        </section>
+
+        <section class="form-registry__section form-registry__section--achievement">
+          <h2 class="form-registry__title">
+            Ваши безбашенные достижения в путешествии
+          </h2>
+          <div class="form-registry__field form-registry__field--checkbox">
+            <label>
+              <input type="checkbox" name="selfi" checked>
+              Сделал селфи с акулой
+            </label>
+            <label>
+              <input type="checkbox" name="beach" checked>
+              Обгорел на пляже
+            </label>
+            <label>
+              <input type="checkbox" name="chuck">
+              Видел Чака Нориса
+            </label>
+            <label>
+              <input type="checkbox" name="gift">
+              Накупил сувениров
+            </label>
+            <label>
+              <input type="checkbox" name="tower" checked>
+              Удержал башню
+            </label>
+            <label>
+              <input type="checkbox" name="hotel">
+              Разгромил отель
+            </label>
+          </div>
+        </section>
+
+        <section class="form-registry__section form-registry__section--contacts">
+          <h2 class="visually-hidden">
+            Контактные данные
+          </h2>
+          <div class="form-registry__field form-registry__field--text">
+            <label for="phone">Номер телефона</label>
+            <input type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="form-registry__field form-registry__field--text">
+            <label for="email">Адрес почты</label>
+            <input type="email" name="email" id="email" placeholder="Введите почту *">
+          </div>
+        </section>
+
+        <section class="form-registry__section form-registry__section--application">
+          <h2 class="form-registry__title">
+            С каким приложением путешествовали?
+          </h2>
+          <div class="form-registry__field form-registry__field--radio">
+            <label>
+              <input type="radio" name="app" value="ios" checked>
+              Pink для iOS
+            </label>
+            <label>
+              <input type="radio" name="app" value="android">
+              Pink для Android
+            </label>
+            <label>
+              <input type="radio" name="app" value="windows">
+              Windows Phone
+            </label>
+          </div>
+        </section>
+
+        <section class="form-registry__section form-registry__section--feedback">
+          <h2 class="form-registry__title">
+            Опишите свои эмоции
+          </h2>
+          <div class="form-registry__field form-registry__field--textarea">
+            <textarea name="feedback" rows="6" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </section>
+
+        <input class="form-registry__submit" type="submit" name="submit" value="Отправить форму">
+
+      </div>
+    </form>
+
+    <p class="page-main__discription">
+      *-обязательные поля ввода
+    </p>
+
+  </main>
+
+  <footer class="page-footer">
+    <a href="#" class="page-footer__logo">
+      Pink
+    </a>
+    <div class="page-footer__social social">
+      <h2 class="visually-hidden social__title">
+        Мы в интернете
+      </h2>
+      <ul class="social__list">
+        <li class="sotial__item">
+          <a href="#" class="social__link social__link--twitter">Twitter</a>
+        </li>
+        <li class="sotial__item">
+          <a href="#" class="social__link social__link--facebook">Facebook</a>
+        </li>
+        <li class="sotial__item">
+          <a href="#" class="social__link social__link--youtube">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a href="https://htmlacademy.ru" class="copyright__link">HTML Academy</a>
+    </div>
+  </footer>
+
+</body>
+</html>
