@@ -1,0 +1,33 @@
+.slider--hidden {
+  overflow: hidden;
+  // flex-wrap: wrap;
+}
+
+.slider__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.slider__list--hidden {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slider__item {
+  display: none;
+}
+
+.slider__item--hidden {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.slider__item--active {
+  display: block;
+}

@@ -1,0 +1,28 @@
+.like {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  color: $pink-color;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.like__link {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/icon-heart.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.like__count {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
