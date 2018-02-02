@@ -1,0 +1,22 @@
+.review {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.review__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.review__author {
+  font-size: 18px;
+}
+
+.review__description {
+  font-size: 14px;
+  line-height: 30px;
+}

@@ -1,0 +1,124 @@
+.form-registry {
+}
+
+.form-registry__section {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-registry__section--name-info {
+  padding-bottom: 20px;
+}
+
+.form-registry__section--achievement {
+  background-color: $secondary-bgColor;
+}
+
+.form-registry__section--application {
+  background-color: $secondary-bgColor;
+}
+
+.form-registry__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-registry__label {
+  color: $pink-color;
+  font-stize: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-indent: 20px;
+}
+
+.form-registry__input {
+  outline: none;
+  border: 2px solid rgb(230, 230, 230);
+  padding: 15px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border-radius: 3px;
+}
+
+.form-registry__checkbox-field {
+  padding-left: 45px;
+  padding-right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.form-registry__textarea {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 3px;
+}
+
+.form-registry__title {
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  color: $pink-color;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.form-registry__title--feedback {
+  margin-bottom: 20px;
+}
+
+.form-registry__submit {
+  padding: 20px;
+}
+
+.form-registry__button {
+  cursor: pointer;
+  background-color: rgb(42, 171, 109);
+  border-radius: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $light-color;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.form-registry__prompt {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-registry__prompt--notation {
+  color: $pink-color;
+}
