@@ -6,12 +6,39 @@
   font-size: 24px;
   font-weight: lighter;
   margin-bottom: 30px;
+  @media (min-width: 660px) {
+    font-size: 40px;
+    @include padding-side(40px);
+    @media (min-width: 1200px) {
+      font-size: 50px;
+      @include padding-side(350px);
+    }
+  }
 }
 
 .contacts__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.contacts__item--address {
+  max-width: 250px;
+}
+
+.contacts__item--mail {
+  @media (min-width: 1200px) {
+    order: 3;
+  }
 }
 
 .contacts__title {
