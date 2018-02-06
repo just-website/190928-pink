@@ -85,5 +85,8 @@
   @media (min-width: 660px) {
     font-size: 50px;
     @include padding-side(90px);
+    @media (min-width: 1200px) {
+      @include padding-side(310px);
+    }
   }
 }
