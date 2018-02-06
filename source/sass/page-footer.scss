@@ -1,6 +1,24 @@
 .page-footer {
   padding: 20px;
   text-align: center;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 1200px) {
+      @include padding-side(120px);
+    }
+  }
+}
+
+.page-footer--index {
+  @media (min-width: 660px) {
+    display: block;
+  }
 }
 
 .page-footer__link {

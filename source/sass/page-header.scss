@@ -82,4 +82,8 @@
   text-align: center;
   font-size: 24px;
   font-weight: lighter;
+  @media (min-width: 660px) {
+    font-size: 50px;
+    @include padding-side(90px);
+  }
 }
