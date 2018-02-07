@@ -1,6 +1,5 @@
 .slider--hidden {
   overflow: hidden;
-  // flex-wrap: wrap;
 }
 
 .slider__list {
@@ -9,11 +8,14 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slider__list--hidden {
-  padding-left: 0;
-  padding-right: 0;
+  // padding-left: 0;
+  // padding-right: 0;
 }
 
 .slider__item {
@@ -29,5 +31,16 @@
 }
 
 .slider__item--active {
-  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.slider__toggles {
+  @media (min-width: 1200px) {
+    visibility: hidden;
+  }
 }

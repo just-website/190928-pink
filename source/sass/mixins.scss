@@ -1,0 +1,4 @@
+@mixin padding-side($px) {
+  padding-left: $px;
+  padding-right: $px;
+}

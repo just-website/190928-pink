@@ -18,7 +18,8 @@
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-around; // почему не работает?
+  justify-content: space-between;
+  min-width: 180px;
   font-size: 0;
 }
 

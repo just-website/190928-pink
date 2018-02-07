@@ -3,6 +3,30 @@
   padding-top: 50px;
 }
 
+.advantages__wrapper {
+  background-image: url('../img/iphone-screen-mobile@1x.png');
+  background-position: center 435px;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  background-color: $secondary-bgColor;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    min-height: auto;
+    justify-content: flex-end;
+    background-position: 10px 40px;
+    @media (min-width: 1200px) {
+      background-image: none;
+      justify-content: space-around;
+      @include padding-side(120px);
+    }
+  }
+
+}
+
 .advantages__header {
   margin-bottom: 125px;
 }
@@ -11,6 +35,23 @@
   font-size: 24px;
   font-weight: lighter;
   margin-top: 0;
+  @media (min-width: 660px) {
+    font-size:40px;
+  }
+}
+
+.advantages__info--first {
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__info--last {
+  @media (min-width: 660px) {
+    // margin: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 
 .advantages__list {
@@ -19,26 +60,51 @@
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: $secondary-bgColor;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    text-align: left;
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-grow: 1
+    }
+  }
 }
 
 .advantages__item {
   margin-bottom: 30px;
+  @media (min-width: 1200px) {
+    width: 250px;
+    text-align: center;
+  }
 }
 
 .advantages__title {
-  font-style: 18px;
+  font-size: 18px;
   margin-bottom: 10px;
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
 }
 
 .advantages__description {
   line-height: 24px;
   font-size: 14px;
+  @media (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
-.advantages__background {
-  margin: 0 auto;
-  width: 155px;
-  height: 280px;
-  background-image: url('../img/iphone-screen-mobile@1x.png');
-}
+// .advantages__background {
+//   margin: 0 auto;
+//   width: 155px;
+//   height: 280px;
+//   background-image: url('../img/iphone-screen-mobile@1x.png');
+// }

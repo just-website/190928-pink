@@ -1,7 +1,22 @@
 .form-registry {
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    @include padding-side(20px);
+    @media (min-width: 1200px) {
+      @include padding-side(120px);
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .form-registry__section {
+  border: none;
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 20px;
@@ -11,24 +26,97 @@
   display: -o-flex;
   display: flex;
   flex-direction: column;
+  @media (min-width: 660px) {
+    border: 2px solid rgb(230, 230, 230);
+    margin-bottom: 65px;
+  }
+}
+
+.form-registry__section--contacts {
+  @media (min-width: 660px) {
+    order: 3;
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
 }
 
 .form-registry__section--name-info {
   padding-bottom: 20px;
+  @media (min-width: 660px) {
+    border: none;
+    @media (min-width: 1200px) {
+      flex-grow: 1;
+      margin-right: 50px;
+    }
+  }
 }
 
 .form-registry__section--achievement {
   background-color: $secondary-bgColor;
+  @media (min-width: 660px) {
+    background-color: $primary-bgColor;
+    order: 4;
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
 }
 
 .form-registry__section--application {
   background-color: $secondary-bgColor;
+  // order: 1;
+  @media (min-width: 660px) {
+    background-color: $primary-bgColor;
+    // order: 2;
+    @media (min-width: 1200px) {
+      flex-grow: 1;
+    }
+  }
+}
+
+.form-registry__section--feedback {
+  @media (min-width: 660px) {
+    order: 5;
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
 }
 
 .form-registry__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.form-registry__field--text {
+  @media (min-width: 660px) {
+    flex-direction: row;
+  }
+}
+
+.form-registry__field--contacts {
+  @media (min-width: 660px) {
+    align-items: flex-start;
+  }
+}
+
+.form-registry__field--checkbox {
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }
 
 .form-registry__label {
@@ -39,6 +127,13 @@
   text-indent: 20px;
 }
 
+.form-registry__label--contacts {
+  @media (min-width: 660px) {
+    padding-left: 15px;
+    margin-top: 15px;
+  }
+}
+
 .form-registry__input {
   outline: none;
   border: 2px solid rgb(230, 230, 230);
@@ -47,6 +142,17 @@
   font-size: 18px;
   line-height: 30px;
   border-radius: 3px;
+  @media (min-width: 660px) {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+}
+
+.form-registry__input--contacts {
+  @media (min-width: 660px) {
+    align-self: stretch;
+    order: -1;
+  }
 }
 
 .form-registry__checkbox-field {
@@ -67,6 +173,8 @@
   line-height: 30px;
   border: 2px solid rgb(230, 230, 230);
   border-radius: 3px;
+  min-height: 200px;
+  align-self: stretch;
 }
 
 .form-registry__title {
@@ -89,6 +197,21 @@
 
 .form-registry__submit {
   padding: 20px;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include padding-side(0);
+    order: 6;
+    @media (min-width: 1200px) {
+      justify-content: center;
+      width: 100%;
+    }
+  }
 }
 
 .form-registry__button {
@@ -111,6 +234,10 @@
   font-size: 18px;
   text-transform: uppercase;
   width: 100%;
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-left: 0;
+  }
 }
 
 .form-registry__prompt {

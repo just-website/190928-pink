@@ -1,0 +1,35 @@
+.effect {
+  display: none;
+  // background-image: url('#');
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    @media (min-width: 1200px) {
+      background-color: $secondary-bgColor;
+      padding-bottom: 100px;
+    }
+  }
+}
+
+.effect__wrapper {
+  width: 360px;
+  @media (min-width: 1200px) {
+    width: 520px;
+    padding-right: 180px;
+  }
+}
+
+.effect__title {
+  font-size: 30px;
+  padding-right: 160px;
+}
+
+.effect__discription {
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
