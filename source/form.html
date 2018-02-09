@@ -38,128 +38,134 @@
         </div>
       </div>
     </div>
-    <h2 class="page-header__title">
-      Конкурс на самое бузбашенное путешествие с Пинк
-    </h2>
+    <div class="container">
+      <h2 class="page-header__title">
+        Конкурс на самое бузбашенное путешествие с Пинк
+      </h2>
+    </div>
   </header>
 
   <main class="page-main">
 
-    <div class="page-main__header">
-      <h1 class="visually-hidden">
-        Форма регистрации.
-      </h1>
-      <p class="page-main__description">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </p>
-      <p class="page-main__description page-main__description--hidden">
-        Пожалуйста, заполните форму ниже:
-      </p>
+    <div class="container">
+      <div class="page-main__header">
+        <h1 class="visually-hidden">
+          Форма регистрации.
+        </h1>
+        <p class="page-main__description">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        </p>
+        <p class="page-main__description page-main__description--hidden">
+          Пожалуйста, заполните форму ниже:
+        </p>
+      </div>
+
+      <form class="page-main__form form-registry" action="https://echo.htmlacademy.ru" method="post">
+        <!-- <div class="form-registry__wrapper"> -->
+
+          <section class="form-registry__section form-registry__section--name-info">
+            <h2 class="visually-hidden">Пожалуйста, представтесь</h2>
+            <div class="form-registry__field form-registry__field--text">
+              <label class="form-registry__label" for="surname">Фамилия:</label>
+              <input class="form-registry__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            </div>
+            <div class="form-registry__field form-registry__field--text">
+              <label class="form-registry__label" for="name">Имя:</label>
+              <input class="form-registry__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            </div>
+            <div class="form-registry__field form-registry__field--text">
+              <label class="form-registry__label" for="second-name">Отчество:</label>
+              <input class="form-registry__input" type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
+            </div>
+          </section>
+
+          <div class="form-registry__section form-registry__section--achievement">
+            <h3 class="form-registry__title">
+              Ваши безбашенные достижения в путешествии
+            </h3>
+            <div class="form-registry__field form-registry__field--checkbox">
+              <label class="form-registry__checkbox-field form-registry__checkbox-field--checkbox">
+                <input type="checkbox" name="selfi" checked>
+                Сделал селфи с акулой
+              </label>
+              <label class="form-registry__checkbox-field form-registry__checkbox-field--checkbox">
+                <input type="checkbox" name="beach" checked>
+                Обгорел на пляже
+              </label>
+              <label class="form-registry__checkbox-field form-registry__checkbox-field--checkbox">
+                <input type="checkbox" name="chuck">
+                Видел Чака Нориса
+              </label>
+              <label class="form-registry__checkbox-field form-registry__checkbox-field--checkbox">
+                <input type="checkbox" name="gift">
+                Накупил сувениров
+              </label>
+              <label class="form-registry__checkbox-field form-registry__checkbox-field--checkbox">
+                <input type="checkbox" name="tower" checked>
+                Удержал башню
+              </label>
+              <label class="form-registry__checkbox-field form-registry__checkbox-field--checkbox">
+                <input type="checkbox" name="hotel">
+                Разгромил отель
+              </label>
+            </div>
+          </div>
+
+          <div class="form-registry__section form-registry__section--contacts">
+            <h3 class="form-registry__title form-registry__title--contacts">
+              Контактная информация
+            </h3>
+            <div class="form-registry__section-wrapper">
+              <div class="form-registry__field form-registry__field--contacts">
+                <label class="form-registry__label form-registry__label--contacts" for="phone">Номер телефона</label>
+                <input class="form-registry__input form-registry__input--contacts" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form-registry__field form-registry__field--contacts">
+                <label class="form-registry__label form-registry__label--contacts" for="email">Адрес почты</label>
+                <input class="form-registry__input form-registry__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-registry__section form-registry__section--application">
+            <h3 class="form-registry__title">
+              С каким приложением путешествовали?
+            </h3>
+            <div class="form-registry__field form-registry__field--radio">
+              <label class="form-registry__checkbox-field">
+                <input type="radio" name="app" value="ios" checked>
+                Pink для iOS
+              </label>
+              <label class="form-registry__checkbox-field">
+                <input type="radio" name="app" value="android">
+                Pink для Android
+              </label>
+              <label class="form-registry__checkbox-field">
+                <input type="radio" name="app" value="windows">
+                Windows Phone
+              </label>
+            </div>
+          </div>
+
+          <div class="form-registry__section form-registry__section--feedback">
+            <h3 class="form-registry__title form-registry__title--feedback">
+              Опишите свои эмоции
+            </h3>
+            <div class="form-registry__field form-registry__field--textarea">
+              <textarea class="form-registry__textarea" name="feedback" rows="" cols="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </div>
+
+          <div class="form-registry__submit">
+            <input class="form-registry__button" type="submit" name="submit" value="Отправить форму">
+            <p class="form-registry__prompt">
+              <span class="form-registry__prompt--notation ">*</span>-обязательные поля ввода
+            </p>
+          </div>
+
+        <!-- </div> -->
+      </form>
     </div>
-
-    <form class="page-main__form form-registry" action="https://echo.htmlacademy.ru" method="post">
-      <!-- <div class="form-registry__wrapper"> -->
-
-        <section class="form-registry__section form-registry__section--name-info">
-          <h2 class="visually-hidden">Пожалуйста, представтесь</h2>
-          <div class="form-registry__field form-registry__field--text">
-            <label class="form-registry__label" for="surname">Фамилия:</label>
-            <input class="form-registry__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
-          </div>
-          <div class="form-registry__field form-registry__field--text">
-            <label class="form-registry__label" for="name">Имя:</label>
-            <input class="form-registry__input" type="text" name="name" id="name" placeholder="Введите ваше имя *">
-          </div>
-          <div class="form-registry__field form-registry__field--text">
-            <label class="form-registry__label" for="second-name">Отчество:</label>
-            <input class="form-registry__input" type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
-          </div>
-        </section>
-
-        <fieldset class="form-registry__section form-registry__section--achievement">
-          <legend class="form-registry__title">
-            Ваши безбашенные достижения в путешествии
-          </legend>
-          <div class="form-registry__field form-registry__field--checkbox">
-            <label class="form-registry__checkbox-field">
-              <input type="checkbox" name="selfi" checked>
-              Сделал селфи с акулой
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="checkbox" name="beach" checked>
-              Обгорел на пляже
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="checkbox" name="chuck">
-              Видел Чака Нориса
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="checkbox" name="gift">
-              Накупил сувениров
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="checkbox" name="tower" checked>
-              Удержал башню
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="checkbox" name="hotel">
-              Разгромил отель
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-registry__section form-registry__section--contacts">
-          <legend class="form-registry__title form-registry__title--contacts">
-            Контактная информация
-          </legend>
-          <div class="form-registry__field form-registry__field--contacts">
-            <label class="form-registry__label form-registry__label--contacts" for="phone">Номер телефона</label>
-            <input class="form-registry__input form-registry__input--contacts" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
-          </div>
-          <div class="form-registry__field form-registry__field--contacts">
-            <label class="form-registry__label form-registry__label--contacts" for="email">Адрес почты</label>
-            <input class="form-registry__input form-registry__input--contacts" type="email" name="email" id="email" placeholder="Введите почту *">
-          </div>
-        </fieldset>
-
-        <fieldset class="form-registry__section form-registry__section--application">
-          <legend class="form-registry__title">
-            С каким приложением путешествовали?
-          </legend>
-          <div class="form-registry__field form-registry__field--radio">
-            <label class="form-registry__checkbox-field">
-              <input type="radio" name="app" value="ios" checked>
-              Pink для iOS
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="radio" name="app" value="android">
-              Pink для Android
-            </label>
-            <label class="form-registry__checkbox-field">
-              <input type="radio" name="app" value="windows">
-              Windows Phone
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="form-registry__section form-registry__section--feedback">
-          <legend class="form-registry__title form-registry__title--feedback">
-            Опишите свои эмоции
-          </legend>
-          <div class="form-registry__field form-registry__field--textarea">
-            <textarea class="form-registry__textarea" name="feedback" rows="" cols="" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
-        </fieldset>
-
-        <div class="form-registry__submit">
-          <input class="form-registry__button" type="submit" name="submit" value="Отправить форму">
-          <p class="form-registry__prompt">
-            <span class="form-registry__prompt--notation ">*</span>-обязательные поля ввода
-          </p>
-        </div>
-
-      <!-- </div> -->
-    </form>
 
 
   </main>
