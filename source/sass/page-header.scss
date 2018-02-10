@@ -1,7 +1,5 @@
 .page-header {
-  // color: $light-color;
   background-color: rgb(29, 38, 49);
-  // min-width: 320px;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: top;
@@ -10,36 +8,6 @@
 }
 
 .page-header__wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  @media (min-width: 660px) {
-    flex-direction: row;
-    justify-content: flex-start;
-    @media (min-width: 1200px) {
-      @include padding-side(120px);
-    }
-  }
-}
-
-.page-header__wrapper--index {
-  min-height: 660px;
-  background-image: url('../img/iphone-hand-mobile@1x.png');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: left 90px;
-  @media (min-width: 660px) {
-    background-position: right 240px;
-    min-height: 460px;
-  }
-}
-
-.page-header__top {
-  background-color: rgba(	29, 38, 49, .7);
   padding: 20px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -50,6 +18,52 @@
   @media (min-width: 1200px) {
     justify-content: space-around;
   }
+}
+
+// .page-header__promo {
+//   display: -webkit-flex;
+//   display: -moz-flex;
+//   display: -ms-flex;
+//   display: -o-flex;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+//   @media (min-width: 660px) {
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     @media (min-width: 1200px) {
+//       @include padding-side(120px);
+//     }
+//   }
+// }
+
+
+.page-header__promo {
+  min-height: 660px;
+  background-image: url('../img/iphone-hand-mobile@1x.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left 90px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @media (min-width: 660px) {
+    background-position: right 240px;
+    min-height: 460px;
+    flex-direction: row;
+    justify-content: flex-start;
+    @media (min-width: 1200px) {
+      @include padding-side(120px);
+    }
+  }
+}
+
+.page-header__top {
+  background-color: rgba(	29, 38, 49, .7);
 }
 
 .page-header__logo {
@@ -84,9 +98,9 @@
   font-weight: lighter;
   @media (min-width: 660px) {
     font-size: 50px;
-    @include padding-side(90px);
+    // @include padding-side(90px);
     @media (min-width: 1200px) {
-      @include padding-side(310px);
+      // @include padding-side(310px);
     }
   }
 }

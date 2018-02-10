@@ -2,12 +2,7 @@
   display: none;
   // background-image: url('#');
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: flex-end;
+    display: block;
     @media (min-width: 1200px) {
       background-color: $secondary-bgColor;
       padding-bottom: 100px;
@@ -15,11 +10,22 @@
   }
 }
 
+.effect__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .effect__wrapper {
-  width: 360px;
-  @media (min-width: 1200px) {
-    width: 520px;
-    padding-right: 180px;
+  @media (min-width: 660px) {
+    width: 360px;
+    @media (min-width: 1200px) {
+      width: 520px;
+      padding-right: 180px;
+    }
   }
 }
 

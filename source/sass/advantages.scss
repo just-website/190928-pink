@@ -1,6 +1,7 @@
 .advantages {
   text-align: center;
   padding-top: 50px;
+  background-color: $secondary-bgColor;
 }
 
 .advantages__wrapper {
@@ -8,7 +9,6 @@
   background-position: center 435px;
   background-repeat: no-repeat;
   min-height: 720px;
-  background-color: $secondary-bgColor;
   @media (min-width: 660px) {
     display: -webkit-flex;
     display: -moz-flex;
