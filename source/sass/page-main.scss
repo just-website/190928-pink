@@ -8,10 +8,16 @@
   text-align: center;
   font-size: 14px;
   line-height: 30px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  // padding-left: 25px;
+  // padding-right: 25px;
+  padding-top: 10px;
+  margin-bottom: 35px;
+  @media (min-width: 660px) {
+    padding-top: 75px;
+    @media (min-width: 1200px) {
+      margin-bottom: 72px;
+    }
+  }
 }
 
 .page-main__header--foto {
@@ -24,9 +30,11 @@
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 0;
+    margin-top: 17px;
     @include padding-side(60px);
     @media (min-width: 1200px) {
-      @include padding-side(220px);
+      @include padding-side(80px);
+      display: inline-block;
     }
   }
 }
@@ -36,5 +44,9 @@
   @media (min-width: 660px) {
     display: block;
     margin-top: 0;
+    @media (min-width: 1200px) {
+      display: inline-block;
+      padding: 0;
+    }
   }
 }
