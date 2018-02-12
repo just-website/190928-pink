@@ -36,6 +36,11 @@
   @media (min-width: 660px) {
     flex-direction: row-reverse;
     padding-bottom: 70px;
+    @media (min-width: 1200px) {
+      width: 940px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
   }
 }
 

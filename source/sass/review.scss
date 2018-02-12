@@ -4,6 +4,7 @@
   @include padding-side(20px);
   @media (min-width: 1200px) {
     @include padding-side(250px);
+    margin-bottom: 40px;
   }
 }
 
@@ -32,6 +33,10 @@
     font-size: 20px;
     margin-bottom: 0;
     order: 1;
+    @media (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -41,6 +46,10 @@
   @media (min-width: 660px) {
     font-size: 18px;
     order: 0;
+    @media (min-width: 1200px) {
+      padding-top: 60px;
+      margin-bottom: 13px;
+    }
   }
 }
 
@@ -51,5 +60,8 @@
     font-size: 14px;
     order: 2;
     margin-top: 0;
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
   }
 }
