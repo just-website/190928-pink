@@ -1,6 +1,6 @@
 .advantages {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
   background-color: $secondary-bgColor;
 }
 
@@ -28,13 +28,14 @@
 }
 
 .advantages__header {
-  margin-bottom: 125px;
+  margin-bottom: 110px;
 }
 
 .advantages__info {
   font-size: 24px;
   font-weight: lighter;
   margin-top: 0;
+  line-height: 30px;
   @media (min-width: 660px) {
     font-size:40px;
   }

@@ -5,6 +5,7 @@
   background-position: top;
   background-size: cover;
   height: 100%;
+  min-height: 170px;
 }
 
 .page-header__wrapper {
@@ -29,6 +30,19 @@
   }
 }
 
+.page-header__wrapper--index {
+  flex-direction: column;
+  padding-bottom: 0;
+  @media (min-width: 660px) {
+    flex-direction: row-reverse;
+    padding-bottom: 70px;
+  }
+}
+
+.page-header__wrapper--index img {
+  margin-top: 85px;
+}
+
 // .page-header__promo {
 //   display: -webkit-flex;
 //   display: -moz-flex;
@@ -49,7 +63,6 @@
 
 .page-header__promo {
   min-height: 660px;
-  background-image: url('../img/iphone-hand-mobile@1x.png');
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left 90px;
