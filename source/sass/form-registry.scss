@@ -263,7 +263,9 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
 }
 
 .form-registry__field--contacts:last-child {
-  margin-left: 0;
+  @media (min-width: 1200px) {
+    margin-left: 0;
+  }
 }
 
 .form-registry__field--checkbox {

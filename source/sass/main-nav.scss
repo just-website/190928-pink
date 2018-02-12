@@ -1,8 +1,13 @@
 .main-nav {
+  display: none;
   @media (min-width: 1200px) {
     font-size: 18px;
-    display: none;
+    display: block;
   }
+}
+
+.main-nav--active {
+  display: block;
 }
 
 .main-nav__button {
@@ -12,6 +17,10 @@
   height: 24px;
   background-color: inherit;
   border: none;
+  cursor: pointer;
+  @media (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -29,6 +38,7 @@
   flex-grow: 1;
   @media (min-width: 1200px) {
     flex-direction: row;
+    background: none;
   }
 }
 
@@ -49,4 +59,10 @@
   border-top: 1px solid #485461;
   text-transform: uppercase;
   font-weight: bold;
+  @media (min-width: 1200px) {
+    text-transform: none;
+    font-weight: normal;
+    line-height: 18px;
+    border: none;
+  }
 }

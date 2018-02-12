@@ -1,6 +1,9 @@
 .promo {
   width: 100%;
   margin-bottom: 20px;
+  @media (min-width: 660px) {
+    margin-bottom: 50px;
+  }
 }
 
 .promo__content {
@@ -9,10 +12,10 @@
 }
 
 .promo__wrapper {
-  @include padding-side(20px);
+  @include padding-side(17px);
   background-color: $secondary-bgColor;
-  padding-top: 25px;
-
+  padding-top: 18px;
+  padding-bottom: 20px;
   @media (min-width: 660px) {
     display: -webkit-flex;
     display: -moz-flex;
@@ -23,11 +26,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 27px;
   }
 }
 
 .promo__img {
   width: 100%;
+  @media (min-width: 660px) {
+    height: 507px;
+  }
 }
 
 .promo__title {
@@ -35,20 +44,34 @@
   right: 20px;
   top: 0;
   margin: 0;
-  padding: 10px 20px;
+  padding: 6px 20px;
   font-size: 12px;
+  line-height: 24px;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   color: $light-color;
   background-color: $pink-color;
+  @media (min-width: 660px) {
+    top: 56px;
+    @media (min-width: 1200px) {
+      right: 130px;
+    }
+  }
 }
 
 .promo__author {
   background-color: $secondary-bgColor;
   display: block;
+  font-weight: bold;
   padding-top: 0px;
   font-size: 14px;
   line-height: 24px;
+}
+
+.promo__time {
+  font-weight: 200;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .promo__item {
@@ -80,13 +103,14 @@
   }
 }
 
-.promo__author {
-  display: block;
-}
+// .promo__author {
+//   display: block;
+// }
 
 .promo__like {
   background-color: $secondary-bgColor;
   padding: 0;
+  padding-top: 10px;
   @media (min-width: 660px) {
     display: -webkit-flex;
     display: -moz-flex;
