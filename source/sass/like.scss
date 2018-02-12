@@ -1,8 +1,4 @@
 .like {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   align-items: center;
   color: $pink-color;
@@ -10,6 +6,7 @@
   padding-left: 15px;
   padding-bottom: 22px;
   padding-top: 8px;
+
   @media (min-width: 660px) {
     // flex-basis: 100%;
     flex-direction: row-reverse;
@@ -23,10 +20,11 @@
   font-size: 0;
   width: 20px;
   height: 20px;
-  background-image: url('../img/icon-heart.svg');
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 12px;
+
   @media (min-width: 660px) {
     margin-right: 0;
   }

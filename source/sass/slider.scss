@@ -3,10 +3,6 @@
 }
 
 .slider__list {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   list-style: none;
   padding: 0;
@@ -25,24 +21,15 @@
 }
 
 .slider__item--hidden {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
 }
 
 .slider__item--active {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
 }
 
 .slider__toggles {
-
   @media (min-width: 1200px) {
     visibility: hidden;
   }

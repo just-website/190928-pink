@@ -1,8 +1,10 @@
 .editor-form {
   background-color: $secondary-bgColor;
   padding-bottom: 35px;
+
   @media (min-width: 660px) {
     padding-bottom: 55px;
+
     @media (min-width: 1200px) {
       width: 940px;
       margin: 0 auto;
@@ -13,22 +15,9 @@
 
 .editor-form__header {
   margin-bottom: 42px;
+
   @media (min-width: 660px) {
     margin-bottom: 70px;
-  }
-}
-
-.editor-form__wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 20px;
-  @media (min-width: 660px) {
-    flex-direction: row;
   }
 }
 
@@ -40,6 +29,7 @@
   padding: 0;
   background-color: $primary-bgColor;
   text-align: center;
+
   @media (min-width: 660px) {
     font-size: 18px;
     line-height: 30px;
@@ -53,6 +43,7 @@
   padding: 0;
   margin: 0;
   background-color: $primary-bgColor;
+
   @media (min-width: 660px) {
     font-size: 18px;
     line-height: 30px;
@@ -61,21 +52,18 @@
 
 .editor-form__wrapper {
   @media (min-width: 660px) {
-    // @include padding-side(20px);
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: 300px;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+
     @media (min-width: 1200px) {
+      flex-direction: row;
       flex-basis: 410px;
-      @media (min-width: 1200px) {
-        justify-content: space-evenly;
-      }
+      justify-content: space-evenly;
     }
   }
 }
@@ -104,11 +92,8 @@
   padding-bottom: 19px;
   border-bottom: 1px solid rgb(221, 223, 224);
   margin-bottom: 14px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     border-bottom: none;
     margin-bottom: 0;
@@ -131,14 +116,11 @@
 }
 
 .editor-form__effects-group {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   justify-content: space-evenly;
   font-size: 0;
   margin-bottom: 30px;
+
   @media (min-width: 660px) {
     flex-direction: column;
     flex-basis: 175px;
@@ -168,9 +150,11 @@
 
 .editor-form__img {
   flex-basis: 300px;
+
   @media (min-width: 660px) {
     height: 400px;
     margin-top: 37px;
+
     @media (min-width: 1200px) {
       // margin-left: 80px;
     }

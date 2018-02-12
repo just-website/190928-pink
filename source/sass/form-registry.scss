@@ -1,11 +1,8 @@
 .form-registry {
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
+
     @media (min-width: 1200px) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -25,12 +22,9 @@
 
 .form-registry__section-wrapper {
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: row;
+
     @media (min-width: 1200px) {
       align-items: stretch;
     }
@@ -40,6 +34,7 @@
 .form-registry__section--contacts .form-registry__section-wrapper {
   @media (min-width: 660px) {
     flex-direction: column;
+
     @media (min-width: 1200px) {
       flex-direction: row;
     }
@@ -49,9 +44,11 @@
 .form-registry__section--contacts {
   padding-top: 32px;
   padding-bottom: 28px;
+
   @media (min-width: 660px) {
     order: 3;
     margin-bottom: 13px;
+
     @media (min-width: 1200px) {
       width: 100%;
       padding-top: 2px;
@@ -65,10 +62,12 @@
 
 .form-registry__section--name-info {
   padding-bottom: 27px;
+
   @media (min-width: 660px) {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
+
     @media (min-width: 1200px) {
       flex-grow: 1;
       margin-right: 50px;
@@ -96,10 +95,12 @@
 .form-registry__section--achievement {
   background-color: $secondary-bgColor;
   padding-top: 24px;
+
   @media (min-width: 660px) {
     background-color: $primary-bgColor;
     order: 4;
     margin-bottom: 42px;
+
     @media (min-width: 1200px) {
       width: 100%;
     }
@@ -109,10 +110,12 @@
 .form-registry__section--application {
   background-color: $secondary-bgColor;
   padding-top: 23px;
+
   @media (min-width: 660px) {
     background-color: $primary-bgColor;
     padding-top: 4px;
     margin-bottom: 34px;
+
     @media (min-width: 1200px) {
       flex-grow: 1;
     }
@@ -121,9 +124,11 @@
 
 .form-registry__section--feedback {
   padding-top: 24px;
+
   @media (min-width: 660px) {
     order: 5;
     margin-bottom: 0;
+
     @media (min-width: 1200px) {
       width: 100%;
     }
@@ -157,10 +162,10 @@
   box-sizing: content-box;
 }
 
-input[type='radio']:checked + .form-registry__checkbox-box::after {
+input[type="radio"]:checked + .form-registry__checkbox-box::after {
   display: block;
   position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   top: 10px;
@@ -169,26 +174,24 @@ input[type='radio']:checked + .form-registry__checkbox-box::after {
   background-color: $pink-color;
 }
 
-input[type='checkbox']:checked + .form-registry__checkbox-box {
-  background-image: url('../img/icon-yes.svg');
+input[type="checkbox"]:checked + .form-registry__checkbox-box {
+  background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center 7px;
 }
 
 .form-registry__checkbox-text {
   padding-left: 30px;
+
   @media (min-width: 660px) {
     padding-left: 21px;
   }
 }
 
 .form-registry__wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
+
   @media (min-width: 660px) {
     border: 2px solid rgb(230, 230, 230);
     box-sizing: border-box;
@@ -199,6 +202,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
 .form-registry__section--application .form-registry__wrapper {
   @media (min-width: 660px) {
     padding-bottom: 15px;
+
     @media (min-width: 1200px) {
       margin-left: 25px;
     }
@@ -211,15 +215,11 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
   }
 }
 
@@ -228,6 +228,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
     flex-direction: row;
     align-items: center;
     margin-bottom: 51px;
+
     @media (min-width: 1200px) {
       margin-bottom: 52px;
       // align-items: center;
@@ -241,6 +242,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
     margin-left: 58px;
     margin-right: 58px;
     margin-bottom: 40px;
+
     @media (min-width: 1200px) {
       margin-top: 6px;
       margin-bottom: 28px;
@@ -255,6 +257,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
     margin-left: 58px;
     margin-right: 58px;
     margin-bottom: 25px;
+
     @media (min-width: 1200px) {
       flex-grow: 1;
       margin-bottom: 10px;
@@ -270,6 +273,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
 
 .form-registry__field--checkbox {
   margin-bottom: 5px;
+
   @media (min-width: 1200px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -288,6 +292,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   line-height: 30px;
   text-transform: uppercase;
   text-indent: 22px;
+
   @media (min-width: 660px) {
     text-indent: 0;
   }
@@ -307,7 +312,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
     width: 62px;
     height: 63px;
     background-color: #e5e5e5;
-    content: '';
+    content: "";
     top: 3px;
     right: 1px;
   }
@@ -321,6 +326,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   font-size: 18px;
   line-height: 30px;
   border-radius: 3px;
+
   @media (min-width: 660px) {
     flex-grow: 1;
     margin-left: 20px;
@@ -345,14 +351,12 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 21px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     align-items: center;
     margin-left: 58px;
+
     @media (min-width: 1200px) {
       margin-left: 75px;
     }
@@ -361,6 +365,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
 
 .form-registry__checkbox-field--checkbox {
   padding-left: 0;
+
   @media (min-width: 1200px) {
     flex-basis: 260px;
     margin-left: 52px;
@@ -384,9 +389,11 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   min-height: 175px;
   align-self: stretch;
   resize: vertical;
+
   @media (min-width: 660px) {
     min-height: 170px;
   }
+
   @media (min-width: 1200px) {
     min-height: 105px;
   }
@@ -404,12 +411,13 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   color: $pink-color;
   text-transform: uppercase;
   font-weight: normal;
+
   @media (min-width: 660px) {
     position: relative;
     top: -9px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 24px;
-    background: #fff;
+    background: #ffffff;
   }
 }
 
@@ -425,6 +433,7 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
 
 .form-registry__title--contacts {
   display: none;
+
   @media (min-width: 660px) {
     display: block;
   }
@@ -432,17 +441,16 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
 
 .form-registry__submit {
   margin-top: 30px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     @include padding-side(0);
     order: 6;
     margin-top: 73px;
+
     @media (min-width: 1200px) {
       justify-content: center;
       width: 100%;
@@ -460,10 +468,6 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   color: $light-color;
   margin-left: auto;
   margin-right: auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   justify-content: center;
   outline: none;
@@ -471,9 +475,11 @@ input[type='checkbox']:checked + .form-registry__checkbox-box {
   font-size: 18px;
   text-transform: uppercase;
   width: 100%;
+
   @media (min-width: 660px) {
     width: 300px;
     margin-left: 0;
+
     @media (min-width: 1200px) {
       margin-bottom: 30px;
     }

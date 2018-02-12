@@ -1,5 +1,6 @@
 .photo {
   margin-bottom: 40px;
+
   @media (min-width: 1200px) {
     margin-bottom: 10px;
   }
@@ -9,11 +10,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,6 +24,7 @@
   // @include padding-side(20px);
   @media (min-width: 660px) {
     flex-basis: 300px;
+
     @media (min-width: 1200px) {
       margin-bottom: 50px;
     }
@@ -35,16 +34,10 @@
 
 .photo__wrapper {
   background-color: $secondary-bgColor;
-  @media (min-width: 660px) {
-  }
 }
 
-.photo__author {
-
-}
 
 .photo__time { // на макете шрифт тусклее
-  font-weight: normal;
   color: rgb(40, 54, 69);
   font-weight: lighter;
 }
@@ -56,13 +49,10 @@
   padding-left: 18px;
   padding-top: 13px;
   padding-bottom: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
   margin: 0;
+
   @media (min-width: 660px) {
     padding-top: 19px;
     padding-left: 28px;
@@ -71,10 +61,6 @@
 
 .photo__description-wrapper {
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     height: 150px;
     flex-direction: column;
@@ -84,8 +70,10 @@
 
 .photo__img {
   width: 100%;
+
   @media (min-width: 660px) {
     height: 300px;
+
     @media (min-width: 1200px) {
       height: 400px;
     }

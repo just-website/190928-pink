@@ -1,14 +1,10 @@
 .promo {
   width: 100%;
   margin-bottom: 20px;
+
   @media (min-width: 660px) {
     margin-bottom: 50px;
   }
-}
-
-.promo__content {
-  // @include padding-side(20px);
-
 }
 
 .promo__wrapper {
@@ -16,11 +12,8 @@
   background-color: $secondary-bgColor;
   padding-top: 18px;
   padding-bottom: 20px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -34,6 +27,7 @@
 
 .promo__img {
   width: 100%;
+
   @media (min-width: 660px) {
     height: 507px;
   }
@@ -51,8 +45,10 @@
   font-weight: bold;
   color: $light-color;
   background-color: $pink-color;
+
   @media (min-width: 660px) {
     top: 56px;
+
     @media (min-width: 1200px) {
       right: 130px;
     }
@@ -63,7 +59,7 @@
   background-color: $secondary-bgColor;
   display: block;
   font-weight: bold;
-  padding-top: 0px;
+  padding-top: 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -75,16 +71,13 @@
 }
 
 .promo__item {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: $primary-bgColor;
   padding-left: 0;
   padding-right: 0;
+
   @media (min-width: 660px) {
     // flex-basis: 100%;
   }
@@ -92,11 +85,12 @@
 
 .promo__description {
   background-color: $secondary-bgColor;
-  padding-top: 0px;
+  padding-top: 0;
   margin-bottom: 0;
   margin-top: 0;
   font-size: 14px;
   line-height: 24px;
+
   @media (min-width: 660px) {
     order: 1;
     width: 100%;
@@ -111,11 +105,8 @@
   background-color: $secondary-bgColor;
   padding: 0;
   padding-top: 10px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-basis: 120px;
     flex-direction: row-reverse;

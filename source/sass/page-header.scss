@@ -1,6 +1,6 @@
 .page-header {
   background-color: rgb(29, 38, 49);
-  background-image: url('../img/bg-back-mobile@1x.jpg');
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -12,15 +12,13 @@
   // padding: 20px;
   padding-top: 25px;
   padding-bottom: 21px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   justify-content: space-between;
+
   @media (min-width: 660px) {
     padding-top: 46px;
     padding-bottom: 40px;
+
     @media (min-width: 1200px) {
       justify-content: space-around;
       width: 300px;
@@ -33,9 +31,11 @@
 .page-header__wrapper--index {
   flex-direction: column;
   padding-bottom: 0;
+
   @media (min-width: 660px) {
     flex-direction: row-reverse;
     padding-bottom: 70px;
+
     @media (min-width: 1200px) {
       width: 940px;
       margin: 0 auto;
@@ -71,18 +71,16 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left 90px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
   @media (min-width: 660px) {
     background-position: right 240px;
     min-height: 460px;
     flex-direction: row;
     justify-content: flex-start;
+
     @media (min-width: 1200px) {
       @include padding-side(120px);
     }
@@ -91,10 +89,6 @@
 
 .page-header__top {
   @media (min-width: 1200px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     align-items: center;
     width: 940px;
@@ -103,8 +97,7 @@
 }
 
 .page-header__top--wrapper {
-  background-color: rgba(	29, 38, 49, .7);
-
+  background-color: rgba(29, 38, 49, 0.7);
 }
 
 // .main-nav--active .page-header__top--wrapper {
@@ -119,7 +112,7 @@
 
 .page-header__logo {
   font-size: 0;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .page-header__nav {
@@ -129,7 +122,7 @@
     // width: auto;
     // height: auto;
     // background-image: none;
-    flex-grow: 3
+    flex-grow: 3;
   }
 }
 
@@ -145,9 +138,9 @@
   font-size: 24px;
   font-weight: lighter;
   line-height: 29px;
+
   @media (min-width: 660px) {
     font-size: 50px;
-    line-height: normal;
     padding-top: 40px;
     line-height: 60px;
     margin-bottom: 25px;

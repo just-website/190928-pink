@@ -1,19 +1,19 @@
-.contacts {
-
-}
-
 .contacts__header {
   font-size: 24px;
   font-weight: lighter;
   margin-bottom: 30px;
+
   @media (min-width: 660px) {
     font-size: 40px;
     padding-top: 13px;
     line-height: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
+
     @include padding-side(41px);
+
     @media (min-width: 1200px) {
       font-size: 50px;
+
       @include padding-side(350px);
       padding-top: 23px;
       line-height: 58px;
@@ -25,14 +25,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
     @media (min-width: 1200px) {
       max-width: 940px;
       margin: 0 auto;
@@ -61,8 +60,10 @@
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 18px;
+
   @media (min-width: 660px) {
     margin-top: 43px;
+
     @media (min-width: 1200px) {
       margin-top: 58px;
       margin-bottom: 22px;
