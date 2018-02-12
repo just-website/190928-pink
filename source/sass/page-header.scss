@@ -1,15 +1,76 @@
 .page-header {
-  // color: $light-color;
   background-color: rgb(29, 38, 49);
-  // min-width: 320px;
   background-image: url('../img/bg-back-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-
+  height: 100%;
+  min-height: 170px;
 }
 
 .page-header__wrapper {
+  // padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 660px) {
+    padding-top: 46px;
+    padding-bottom: 40px;
+    @media (min-width: 1200px) {
+      justify-content: space-around;
+      width: 300px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.page-header__wrapper--index {
+  flex-direction: column;
+  padding-bottom: 0;
+  @media (min-width: 660px) {
+    flex-direction: row-reverse;
+    padding-bottom: 70px;
+    @media (min-width: 1200px) {
+      width: 940px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+  }
+}
+
+.page-header__wrapper--index img {
+  margin-top: 85px;
+}
+
+// .page-header__promo {
+//   display: -webkit-flex;
+//   display: -moz-flex;
+//   display: -ms-flex;
+//   display: -o-flex;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+//   @media (min-width: 660px) {
+//     flex-direction: row;
+//     justify-content: flex-start;
+//     @media (min-width: 1200px) {
+//       @include padding-side(120px);
+//     }
+//   }
+// }
+
+
+.page-header__promo {
+  min-height: 660px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left 90px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -18,6 +79,8 @@
   flex-direction: column;
   justify-content: flex-end;
   @media (min-width: 660px) {
+    background-position: right 240px;
+    min-height: 460px;
     flex-direction: row;
     justify-content: flex-start;
     @media (min-width: 1200px) {
@@ -26,29 +89,31 @@
   }
 }
 
-.page-header__wrapper--index {
-  min-height: 660px;
-  background-image: url('../img/iphone-hand-mobile@1x.png');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: left 90px;
-  @media (min-width: 660px) {
-    background-position: right 240px;
-    min-height: 460px;
+.page-header__top {
+  @media (min-width: 1200px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
-.page-header__top {
+.page-header__top--wrapper {
   background-color: rgba(	29, 38, 49, .7);
-  padding: 20px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
+
+}
+
+// .main-nav--active .page-header__top--wrapper {
+//   border-bottom: 1px solid #010101;
+// }
+
+.page-header__top .container {
   @media (min-width: 1200px) {
-    justify-content: space-around;
+    width: 280px;
   }
 }
 
@@ -58,15 +123,12 @@
 }
 
 .page-header__nav {
-  font-size: 0;
-  background-image: url('../img/icon-menu-burger.svg');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 25px;
+  // font-size: 0;
+
   @media (min-width: 1200px) {
-    width: auto;
-    height: auto;
-    background-image: none;
+    // width: auto;
+    // height: auto;
+    // background-image: none;
     flex-grow: 3
   }
 }
@@ -76,17 +138,24 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 34px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: lighter;
+  line-height: 29px;
   @media (min-width: 660px) {
     font-size: 50px;
-    @include padding-side(90px);
+    line-height: normal;
+    padding-top: 40px;
+    line-height: 60px;
+    margin-bottom: 25px;
+    // @include padding-side(90px);
     @media (min-width: 1200px) {
-      @include padding-side(310px);
+      margin-bottom: 46px;
+      padding-top: 33px;
+      // @include padding-side(310px);
     }
   }
 }

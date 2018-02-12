@@ -1,0 +1,132 @@
+.promo {
+  width: 100%;
+  margin-bottom: 20px;
+  @media (min-width: 660px) {
+    margin-bottom: 50px;
+  }
+}
+
+.promo__content {
+  // @include padding-side(20px);
+
+}
+
+.promo__wrapper {
+  @include padding-side(17px);
+  background-color: $secondary-bgColor;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 27px;
+  }
+}
+
+.promo__img {
+  width: 100%;
+  @media (min-width: 660px) {
+    height: 507px;
+  }
+}
+
+.promo__title {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  margin: 0;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $light-color;
+  background-color: $pink-color;
+  @media (min-width: 660px) {
+    top: 56px;
+    @media (min-width: 1200px) {
+      right: 130px;
+    }
+  }
+}
+
+.promo__author {
+  background-color: $secondary-bgColor;
+  display: block;
+  font-weight: bold;
+  padding-top: 0px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.promo__time {
+  font-weight: 200;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.promo__item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $primary-bgColor;
+  padding-left: 0;
+  padding-right: 0;
+  @media (min-width: 660px) {
+    // flex-basis: 100%;
+  }
+}
+
+.promo__description {
+  background-color: $secondary-bgColor;
+  padding-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 24px;
+  @media (min-width: 660px) {
+    order: 1;
+    width: 100%;
+  }
+}
+
+// .promo__author {
+//   display: block;
+// }
+
+.promo__like {
+  background-color: $secondary-bgColor;
+  padding: 0;
+  padding-top: 10px;
+  @media (min-width: 660px) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-basis: 120px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+
+// @include padding-side(20px);
+// margin-top: -5px;
+// background-color: $primary-bgColor;
+// @media (min-width: 1200px) {
+//   @include padding-side(130px);
+// }

@@ -8,10 +8,15 @@
   margin-bottom: 30px;
   @media (min-width: 660px) {
     font-size: 40px;
-    @include padding-side(40px);
+    padding-top: 13px;
+    line-height: 50px;
+    margin-bottom: 0px;
+    @include padding-side(41px);
     @media (min-width: 1200px) {
       font-size: 50px;
       @include padding-side(350px);
+      padding-top: 23px;
+      line-height: 58px;
     }
   }
 }
@@ -28,12 +33,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @media (min-width: 1200px) {
+      max-width: 940px;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
   }
 }
 
 .contacts__item--address {
   max-width: 250px;
+  margin: 0 auto;
   // margin: auto;
+  @media (min-width: 1200px) {
+    margin: 0;
+    width: auto;
+  }
 }
 
 .contacts__item--mail {
@@ -46,6 +61,13 @@
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 18px;
+  @media (min-width: 660px) {
+    margin-top: 43px;
+    @media (min-width: 1200px) {
+      margin-top: 58px;
+      margin-bottom: 22px;
+    }
+  }
 }
 
 .contacts__description {

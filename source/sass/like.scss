@@ -8,7 +8,15 @@
   color: $pink-color;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 22px;
+  padding-top: 8px;
+  @media (min-width: 660px) {
+    // flex-basis: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 28px;
+  }
 }
 
 .like__link {
@@ -18,11 +26,15 @@
   background-image: url('../img/icon-heart.svg');
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 20px;
+  margin-right: 12px;
+  @media (min-width: 660px) {
+    margin-right: 0;
+  }
 }
 
 .like__count {
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  margin: 0;
 }

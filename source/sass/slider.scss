@@ -11,6 +11,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  justify-content: center;
 }
 
 .slider__list--hidden {
@@ -40,7 +42,26 @@
 }
 
 .slider__toggles {
+
   @media (min-width: 1200px) {
     visibility: hidden;
   }
+}
+
+.slider__toggle {
+  background-color: #bec2c7;
+  font-size: 0;
+  border-radius: 50%;
+  border: none;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  margin: 8px;
+}
+
+.slider__toggle--active {
+  border: 3px solid #283645;
+  background-color: inherit;
+  width: 12px;
+  height: 12px;
 }

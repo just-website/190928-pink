@@ -2,12 +2,10 @@
   display: none;
   // background-image: url('#');
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: flex-end;
+    padding-top: 70px;
+    margin-bottom: 105px;
     @media (min-width: 1200px) {
       background-color: $secondary-bgColor;
       padding-bottom: 100px;
@@ -15,21 +13,56 @@
   }
 }
 
+.effect__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .effect__wrapper {
-  width: 360px;
-  @media (min-width: 1200px) {
-    width: 520px;
-    padding-right: 180px;
+  @media (min-width: 660px) {
+    width: 300px;
+    margin-right: 30px;
+    @media (min-width: 1200px) {
+      width: 495px;
+      padding-right: 180px;
+    }
   }
 }
 
 .effect__title {
   font-size: 30px;
   padding-right: 160px;
+  @media (min-width: 660px) {
+    line-height: 40px;
+    margin-bottom: 0;
+    padding-right: 100px;
+  }
 }
 
 .effect__discription {
-  @media (min-width: 1200px) {
-    font-size: 18px;
+  @media (min-width: 660px) {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 5px;
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 30px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.effect__detail {
+  @media (min-width: 660px) {
+    color: $pink-color;
+    font-size: 14px;
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
   }
 }
