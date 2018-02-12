@@ -8,7 +8,10 @@
   margin-bottom: 30px;
   @media (min-width: 660px) {
     font-size: 40px;
-    @include padding-side(40px);
+    padding-top: 13px;
+    line-height: 50px;
+    margin-bottom: 0px;
+    @include padding-side(41px);
     @media (min-width: 1200px) {
       font-size: 50px;
       @include padding-side(350px);
@@ -47,6 +50,9 @@
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 18px;
+  @media (min-width: 660px) {
+    margin-top: 43px;
+  }
 }
 
 .contacts__description {
