@@ -27,19 +27,22 @@
   width: 100%;
   height: 100%;
   display: flex;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  fill: $pink-color;
+  justify-content: center;
+  align-items: center;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: center;
 }
 
 .social__link--twitter {
-  background-image: url("../img/icon-twitter.svg");
+  // background-image: url("../img/icon-twitter.svg");
 }
 
 .social__link--facebook {
-  background-image: url("../img/icon-facebook.svg");
+  // background-image: url("../img/icon-facebook.svg");
 }
 
 .social__link--youtube {
-  background-image: url("../img/icon-youtube.svg");
+  // background-image: url("../img/icon-youtube.svg");
 }
