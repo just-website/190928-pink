@@ -1,5 +1,12 @@
 .download {
-  background-color: rgb(29, 38, 48);
+  z-index: 2;
+
+  @media (max-width: 659px) {
+    background-color: rgb(29, 38, 48);
+  }
+}
+
+.download__wrapper {
   color: $light-color;
   text-align: center;
   padding-top: 28px;

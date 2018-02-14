@@ -9,6 +9,11 @@
   margin: 0;
   overflow: hidden;
   justify-content: center;
+
+  @media (max-width: 660px) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 .slider__list--hidden {

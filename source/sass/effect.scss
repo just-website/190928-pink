@@ -16,7 +16,11 @@
 
 .effect__container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: row;
+}
+
+.effect__timer {
+  height: 200px;
 }
 
 .effect__wrapper {
