@@ -308,14 +308,21 @@ input[type="checkbox"]:checked + .form-registry__checkbox-box {
 .form-registry__icon-contacts {
   @media (min-width: 660px) {
     position: absolute;
-    display: block;
+    // display: block;
     width: 62px;
     height: 63px;
     background-color: #e5e5e5;
     content: "";
     top: 3px;
     right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+}
+
+.form-registry__icon-contacts svg {
+  fill: $pink-color;
 }
 
 .form-registry__input {

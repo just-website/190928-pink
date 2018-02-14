@@ -28,14 +28,14 @@
 .promo__img {
   width: 100%;
 
-  @media (min-width: 660px) {
-    height: 507px;
-  }
+  // @media (min-width: 660px) {
+  //   height: 507px;
+  // }
 }
 
 .promo__title {
   position: absolute;
-  right: 20px;
+  right: 0;
   top: 0;
   margin: 0;
   padding: 6px 20px;
@@ -48,10 +48,10 @@
 
   @media (min-width: 660px) {
     top: 56px;
-
-    @media (min-width: 1200px) {
-      right: 130px;
-    }
+    //
+    // @media (min-width: 1200px) {
+    //   right: 130px;
+    // }
   }
 }
 
@@ -73,7 +73,6 @@
 .promo__item {
   display: flex;
   flex-direction: column;
-  position: relative;
   background-color: $primary-bgColor;
   padding-left: 0;
   padding-right: 0;
@@ -81,6 +80,10 @@
   @media (min-width: 660px) {
     // flex-basis: 100%;
   }
+}
+
+.promo__item .container:first-child {
+  position: relative;
 }
 
 .promo__description {

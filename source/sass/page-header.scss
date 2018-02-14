@@ -36,10 +36,15 @@
 
 .page-header__image-wrapper {
   @media (min-width: 660px) {
+    max-width: 640px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -5px;
     z-index: 1;
+
+    @media (min-width: 1200px) {
+      max-width: 940px;
+    }
   }
 }
 
@@ -63,6 +68,7 @@
 
 .page-header__wrapper--index img {
   margin-top: 85px;
+  max-width: 100%;
 }
 
 // .page-header__promo {
