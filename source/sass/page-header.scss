@@ -6,6 +6,7 @@
   background-size: cover;
   height: 100%;
   min-height: 170px;
+  position: relative;
 }
 
 .page-header__wrapper {
@@ -37,7 +38,7 @@
   @media (min-width: 660px) {
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 0;
     z-index: 1;
   }
 }
@@ -104,6 +105,8 @@
 }
 
 .page-header__top {
+  z-index: 10;
+
   @media (min-width: 1200px) {
     display: flex;
     align-items: center;

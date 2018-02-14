@@ -12,6 +12,7 @@
 }
 
 .main-nav__button {
+  z-index: 10;
   background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
   width: 50px;
