@@ -24,7 +24,7 @@
       background-image: none;
       justify-content: space-around;
 
-      @include padding-side(120px);
+      // @include padding-side(120px);
     }
   }
 }
@@ -85,7 +85,7 @@
   @media (min-width: 660px) {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    // width: 300px;
     text-align: left;
 
     @media (min-width: 1200px) {
@@ -112,6 +112,7 @@
 
 .advantages__item img {
   display: none;
+  max-width: 100%;
 
   @media (min-width: 1200px) {
     display: block;
