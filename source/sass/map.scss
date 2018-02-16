@@ -1,15 +1,14 @@
-map {
-
-}
-
 .map__background {
-  width: 100%;
+  overflow: hidden;
   height: 200px;
-  background-image: url('../img/bg-map-mobile@1x.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  // width: 100%;
+  // background-image: url("../img/bg-map-mobile@1x.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
   @media (min-width: 660px) {
     height: 400px;
+
     @media (min-width: 1200px) {
       height: 515px;
       margin-bottom: 38px;

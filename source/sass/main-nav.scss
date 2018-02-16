@@ -1,5 +1,6 @@
 .main-nav {
   display: none;
+
   @media (min-width: 1200px) {
     font-size: 18px;
     display: block;
@@ -11,23 +12,22 @@
 }
 
 .main-nav__button {
-  background-image: url('../img/icon-menu-burger.svg');
+  z-index: 10;
+  background-image: url("../img/icon-menu-burger.svg");
   background-repeat: no-repeat;
   width: 50px;
   height: 24px;
   background-color: inherit;
   border: none;
   cursor: pointer;
+  margin-right: 20px;
+
   @media (min-width: 1200px) {
     display: none;
   }
 }
 
 .main-nav__list {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +36,7 @@
   margin: 0;
   background-color: rgb(40, 54, 69);
   flex-grow: 1;
+
   @media (min-width: 1200px) {
     flex-direction: row;
     background: none;
@@ -59,6 +60,7 @@
   border-top: 1px solid #485461;
   text-transform: uppercase;
   font-weight: bold;
+
   @media (min-width: 1200px) {
     text-transform: none;
     font-weight: normal;

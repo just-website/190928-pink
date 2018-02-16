@@ -2,36 +2,36 @@
   text-align: center;
   padding-top: 40px;
   background-color: $secondary-bgColor;
+
   @media (min-width: 1200px) {
     padding-top: 72px;
   }
 }
 
 .advantages__wrapper {
-  background-image: url('../img/iphone-screen-mobile@1x.png');
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: center 435px;
   background-repeat: no-repeat;
   min-height: 720px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     min-height: auto;
     justify-content: flex-end;
     background-position: 10px 40px;
+
     @media (min-width: 1200px) {
       background-image: none;
       justify-content: space-around;
+
       @include padding-side(120px);
     }
   }
-
 }
 
 .advantages__header {
   margin-bottom: 110px;
+
   @media (min-width: 660px) {
     margin-bottom: 105px;
   }
@@ -42,8 +42,10 @@
   font-weight: lighter;
   margin-top: 0;
   line-height: 30px;
+
   @media (min-width: 660px) {
-    font-size:40px;
+    font-size: 40px;
+
     @media (min-width: 1200px) {
       font-size: 50px;
       line-height: 54px;
@@ -64,6 +66,7 @@
     padding-right: 60px;
     padding-top: 10px;
     line-height: 46px;
+
     @media (min-width: 1200px) {
       max-width: 500px;
       margin: 0 auto;
@@ -78,15 +81,13 @@
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
+
   @media (min-width: 660px) {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     flex-direction: column;
     width: 300px;
     text-align: left;
+
     @media (min-width: 1200px) {
       flex-direction: row;
       justify-content: space-between;
@@ -98,8 +99,10 @@
 
 .advantages__item {
   margin-bottom: 30px;
+
   @media (min-width: 660px) {
     margin-bottom: 0;
+
     @media (min-width: 1200px) {
       width: 250px;
       text-align: center;
@@ -109,6 +112,7 @@
 
 .advantages__item img {
   display: none;
+
   @media (min-width: 1200px) {
     display: block;
     margin: 0 auto;
@@ -118,6 +122,7 @@
 .advantages__title {
   font-size: 18px;
   margin-bottom: 10px;
+
   @media (min-width: 1200px) {
     font-size: 30px;
     line-height: 30px;
@@ -128,6 +133,7 @@
 .advantages__description {
   line-height: 24px;
   font-size: 14px;
+
   @media (min-width: 1200px) {
     font-size: 18px;
     line-height: 30px;

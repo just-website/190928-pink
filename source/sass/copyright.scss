@@ -12,13 +12,13 @@
 
 .copyright__link {
   font-size: 0;
-  background-image: url('../img/logo-htmlacademy.svg');
-  background-repeat: no-repeat;
-  height: 35px;
-  width: 35px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
+  // background-image: url("../img/logo-htmlacademy.svg");
+  // background-repeat: no-repeat;
+  // height: 35px;
+  // width: 35px;
   display: flex;
+}
+
+.copyright__link svg {
+  fill: $pink-color;
 }

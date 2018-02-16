@@ -12,8 +12,10 @@
   // padding-right: 25px;
   // padding-top: 30px;
   margin-bottom: 5px;
+
   @media (min-width: 660px) {
     padding-top: 75px;
+
     @media (min-width: 1200px) {
       margin-bottom: 72px;
     }
@@ -28,13 +30,16 @@
 
 .page-main__description {
   padding-top: 30px;
+
   @media (min-width: 660px) {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 0;
     margin-top: 17px;
     padding-bottom: 15px;
+
     @include padding-side(60px);
+
     @media (min-width: 1200px) {
       @include padding-side(80px);
       display: inline-block;
@@ -44,10 +49,12 @@
 
 .page-main__description--hidden {
   display: none;
+
   @media (min-width: 660px) {
     display: block;
     margin-top: 0;
     padding-top: 0;
+
     @media (min-width: 1200px) {
       display: inline-block;
       padding: 0;
