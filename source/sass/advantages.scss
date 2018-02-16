@@ -85,10 +85,11 @@
   @media (min-width: 660px) {
     display: flex;
     flex-direction: column;
-    // width: 300px;
+    width: 300px;
     text-align: left;
 
     @media (min-width: 1200px) {
+      width: auto;
       flex-direction: row;
       justify-content: space-between;
       flex-grow: 1;
