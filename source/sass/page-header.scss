@@ -30,6 +30,14 @@
   }
 }
 
+.page-header--active {
+  background-position-y: 256px;
+
+  @media (min-width: 660px) and (max-width: 1159px) {
+    background-position-y: 215px;
+  }
+}
+
 .page-header__wrapper {
   // padding: 20px;
   padding-top: 25px;
@@ -53,7 +61,12 @@
 .page-header__wrapper--active {
   background: #283645;
   border-bottom: 1px solid #010101;
-  display: none;
+  // display: none;
+}
+
+.page-header__wrapper--active button {
+  background-image: url("../img/icon-menu-cross.svg");
+  width: 25px;
 }
 
 .page-header__image-wrapper {

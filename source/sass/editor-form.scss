@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-basis: 300px;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding-top: 20px;
 
@@ -89,7 +89,7 @@
 
 .editor-form__modify {
   padding-top: 20px;
-  padding-bottom: 19px;
+  padding-bottom: 55px;
   border-bottom: 1px solid rgb(221, 223, 224);
   margin-bottom: 14px;
 
@@ -97,6 +97,7 @@
     display: flex;
     border-bottom: none;
     margin-bottom: 0;
+    padding-bottom: 19px;
   }
 }
 
@@ -112,6 +113,11 @@
 .editor-form__label {
   @media (min-width: 660px) {
     border-bottom: 1px solid #dddfe0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 18px;
   }
 }
 
@@ -120,6 +126,7 @@
   justify-content: space-evenly;
   font-size: 0;
   margin-bottom: 30px;
+  position: relative;
 
   @media (min-width: 660px) {
     flex-direction: column;
@@ -141,6 +148,10 @@
   color: $pink-color;
   border-color: $pink-color;
   cursor: pointer;
+
+  @media (min-width: 1200px) {
+    width: 45%;
+  }
 }
 
 .editor-form__button--disabled {
@@ -161,6 +172,54 @@
   }
 }
 
+.editor-form__label--active .editor-form__value {
+  @media (max-width: 659px) {
+    width: 80%;
+    height: 0;
+    border-top: 1px solid #283645;
+    border-bottom: 1px solid #283645;
+    position: absolute;
+    bottom: -45px;
+    left: 35px;
+  }
+}
+
 .editor-form__value {
-  display: none;
+  @media (min-width: 660px) {
+    width: 80%;
+    height: 0;
+    border-top: 1px solid #283645;
+    border-bottom: 1px solid #283645;
+    position: relative;
+  }
+}
+
+.editor-form__label--active .editor-form__value::after {
+  @media (max-width: 659px) {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border: 2px solid $pink-color;
+    border-radius: 50%;
+    content: "";
+    top: -9px;
+    left: 33px;
+    background-color: $secondary-bgColor;
+  }
+}
+
+.editor-form__value::after {
+  @media (min-width: 660px) {
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    border: 2px solid $pink-color;
+    border-radius: 50%;
+    content: "";
+    top: -9px;
+    left: 33px;
+    background-color: $secondary-bgColor;
+  }
 }

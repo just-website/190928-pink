@@ -155,6 +155,7 @@
   height: 35px;
   border: 2px solid rgb(230, 230, 230);
   border-radius: 2px;
+  background-color: $primary-bgColor;
 }
 
 .form-registry__section--application .form-registry__checkbox-box {
@@ -174,10 +175,29 @@ input[type="radio"]:checked + .form-registry__checkbox-box::after {
   background-color: $pink-color;
 }
 
-input[type="checkbox"]:checked + .form-registry__checkbox-box {
-  background-image: url("../img/icon-yes.svg");
-  background-repeat: no-repeat;
-  background-position: center 7px;
+input[type="checkbox"]:checked + .form-registry__checkbox-box::before {
+  position: absolute;
+  width: 12px;
+  height: 2px;
+  background: $pink-color;
+  content: "";
+  top: 21px;
+  left: 2px;
+  transform: rotate(45deg);
+  // background-image: url("../img/icon-yes.svg");
+  // background-repeat: no-repeat;
+  // background-position: center 7px;
+}
+
+input[type="checkbox"]:checked + .form-registry__checkbox-box::after {
+  position: absolute;
+  width: 26px;
+  right: 1px;
+  height: 2px;
+  background: $pink-color;
+  content: "";
+  top: 17px;
+  transform: rotate(-45deg);
 }
 
 .form-registry__checkbox-text {
@@ -306,6 +326,8 @@ input[type="checkbox"]:checked + .form-registry__checkbox-box {
 }
 
 .form-registry__icon-contacts {
+  display: none;
+
   @media (min-width: 660px) {
     position: absolute;
     // display: block;

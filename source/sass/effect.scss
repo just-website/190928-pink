@@ -21,6 +21,25 @@
 
 .effect__timer {
   height: 200px;
+  position: relative;
+}
+
+.effect__timer::after {
+  position: absolute;
+  top: 83px;
+  left: 63px;
+  display: block;
+  width: 120px;
+  height: 120px;
+  content: "24";
+  font-size: 100px;
+  font-weight: bold;
+  color: $pink-color;
+}
+
+.effect__timer svg {
+  width: 240px;
+  height: 280px;
 }
 
 .effect__wrapper {
