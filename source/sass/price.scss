@@ -1,8 +1,8 @@
 .price {
   text-align: center;
   background-color: $secondary-bgColor;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 85px;
+  padding-bottom: 40px;
   // overflow: hidden;
   // @include padding-side(20px);
   // margin-bottom: 30px;
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   margin-right: -2px;
-  min-width: 250px;
+  min-width: 280px;
 
   @media (min-width: 660px) {
     min-width: 158px;
@@ -46,9 +46,15 @@
   }
 }
 
+.price__list--initial li {
+  justify-content: flex-start;
+}
+
 .price__item {
   position: relative;
   text-align: left;
+  padding-top: 5px;
+  padding-bottom: 6px;
   padding-left: 20px;
   padding-right: 20px;
   border: 2px solid rgb(230, 230, 230);
@@ -58,12 +64,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $primary-bgColor;
 
   @media (min-width: 660px) {
     font-size: 0;
     min-height: 45px;
-    background-color: $primary-bgColor;
     align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 
     @media (min-width: 1200px) {
       padding: 7px;
@@ -73,7 +81,7 @@
 
 .price__item--header svg {
   position: absolute;
-  left: 0;
+  left: -2px;
   top: 0;
 }
 
@@ -101,11 +109,14 @@
   text-align: center;
   min-height: 60px;
   padding: 20px;
+  padding-top: 15px;
   flex-direction: column;
   position: relative;
 
   @media (min-width: 660px) {
     padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
 
     @media (min-width: 1200px) {
       padding: 20px;
@@ -118,7 +129,7 @@
   display: block;
   content: "ХИТ";
   top: 15px;
-  left: 15px;
+  left: 10px;
   width: 30px;
   height: 30px;
   z-index: 1;
@@ -149,9 +160,11 @@
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 3px;
 
   @media (min-width: 660px) {
     font-size: 16px;
+    margin-bottom: 0;
 
     @media (min-width: 1200px) {
       font-size: 18px;

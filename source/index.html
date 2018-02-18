@@ -25,7 +25,7 @@
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -53,7 +53,7 @@
       <div class="download">
           <div class="container download__wrapper">
             <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-            <a href="#" class="download__button button">Скачать приложение</a>
+            <a href="#" class="button download__button">Скачать приложение</a>
             <ul class="download__links">
                 <li class="download__item">
                     <a class="download__link download__link--apple" href="#">Apple</a>
@@ -86,46 +86,48 @@
           <p class="advantages__info advantages__info--first">Устали от серости мегаполиса?</p>
           <p class="advantages__info advantages__info--last">Нам есть, что вам  предложить!</p>
         </div>
-        <div class="advantages__wrapper">
+      </div>
+      <div class="advantages__background">
+        <div class="advantages__wrapper container">
           <ul class="advantages__list">
             <li class="advantages__item">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-                <img src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="phone">
-              </picture>
-              <h3 class="advantages__title">
-                Поднимает настроение
-              </h3>
-              <p class="advantages__description">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-              </p>
-            </li>
-            <li class="advantages__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-                <img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="phone">
-              </picture>
-              <h3 class="advantages__title">
-                Меняет мир вокруг
-              </h3>
-              <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="advantages__item">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
-                <img src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" alt="phone">
-              </picture>
-              <h3 class="advantages__title">
-                Заводит новых друзей
-              </h3>
-              <p class="advantages__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
-        </div>
+                  <img src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="phone">
+                </picture>
+                <h3 class="advantages__title">
+                  Поднимает настроение
+                </h3>
+                <p class="advantages__description">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="advantages__item">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                    <img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="phone">
+                  </picture>
+                  <h3 class="advantages__title">
+                    Меняет мир вокруг
+                  </h3>
+                  <p class="advantages__description">
+                    Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                  </p>
+                </li>
+                <li class="advantages__item">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                      <img src="img/iphone-screen-3-tablet@1x.png" srcset="img/iphone-screen-3-tablet@2x.png 2x" alt="phone">
+                    </picture>
+                    <h3 class="advantages__title">
+                      Заводит новых друзей
+                    </h3>
+                    <p class="advantages__description">
+                      Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                    </p>
+                  </li>
+                </ul>
+              </div>
       </div>
       <!-- <div class="advantages__background"></div> -->
     </section>
@@ -307,7 +309,7 @@
           </ul>
         </li>
       </ul>
-      <div class="slider__toggles">
+      <div class="slider__toggles slider__toggles--price">
         <button class="slider__toggle">1</button>
         <button class="slider__toggle slider__toggle--active">2</button>
         <button class="slider__toggle">3</button>

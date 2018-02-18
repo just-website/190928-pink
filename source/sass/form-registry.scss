@@ -331,12 +331,12 @@ input[type="checkbox"]:checked + .form-registry__checkbox-box::after {
   @media (min-width: 660px) {
     position: absolute;
     // display: block;
-    width: 62px;
-    height: 63px;
+    width: 60px;
+    height: 60px;
     background-color: #e5e5e5;
     content: "";
-    top: 3px;
-    right: 1px;
+    top: 5px;
+    right: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,6 +360,14 @@ input[type="checkbox"]:checked + .form-registry__checkbox-box::after {
     flex-grow: 1;
     margin-left: 20px;
   }
+}
+
+.form-registry__input:hover {
+  border-color: #283645;
+}
+
+.form-registry__input:focus {
+  border-color: $pink-color;
 }
 
 .form-registry__input--contacts {
@@ -513,6 +521,19 @@ input[type="checkbox"]:checked + .form-registry__checkbox-box::after {
       margin-bottom: 30px;
     }
   }
+}
+
+.form-registry__button:hover {
+  background-color: #1c9b5e;
+}
+
+.form-registry__button:active {
+  color: #61b98f;
+}
+
+.form-registry__button[disabled] {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .form-registry__prompt {

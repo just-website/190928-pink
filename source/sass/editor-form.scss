@@ -106,8 +106,18 @@
   height: 25px;
   fill: $pink-color;
 
+  @media (max-width: 659px) {
+    fill: #b5b9be;
+  }
+
   // display: block;
   // background-image: url('../img/icon-editor-crop.svg');
+}
+
+.editor-form__effect:hover {
+  @media (max-width: 659px) {
+    fill: #8d949b;
+  }
 }
 
 .editor-form__label {
@@ -120,6 +130,11 @@
     padding-bottom: 18px;
   }
 }
+
+.editor-form__label--active .editor-form__effect {
+  fill: $pink-color;
+}
+
 
 .editor-form__effects-group {
   display: flex;
@@ -154,9 +169,30 @@
   }
 }
 
+.editor-form__button:hover {
+  background-color: $pink-color;
+  color: $light-color;
+}
+
+.editor-form__button:active {
+  color: #e06989;
+}
+
 .editor-form__button--disabled {
   color: rgb(221, 223, 224);
   border-color: rgb(221, 223, 224);
+}
+
+.editor-form__button--disabled:hover {
+  border-color: #b5b9be;
+  color: #b5b9be;
+  background-color: inherit;
+}
+
+.editor-form__button--disabled:active {
+  color: #cbced2;
+  background-color: #b5b9be;
+  border-color: #b5b9be;
 }
 
 .editor-form__img {
@@ -222,4 +258,8 @@
     left: 33px;
     background-color: $secondary-bgColor;
   }
+}
+
+.editor-form__value::after:hover {
+  background: red;
 }

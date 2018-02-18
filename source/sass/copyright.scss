@@ -22,3 +22,11 @@
 .copyright__link svg {
   fill: $pink-color;
 }
+
+.copyright__link:hover svg {
+  fill: #283645;
+}
+
+.copyright__link:active svg {
+  opacity: 0.5;
+}

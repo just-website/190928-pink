@@ -1,21 +1,31 @@
+.contacts {
+  padding-top: 20px;
+
+  @media (min-width: 660px) {
+    padding-top: 0;
+  }
+}
+
 .contacts__header {
   font-size: 24px;
   font-weight: lighter;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
+  line-height: 30px;
 
   @media (min-width: 660px) {
     font-size: 40px;
     padding-top: 13px;
     line-height: 50px;
     margin-bottom: 0;
+    margin-top: 28px;
 
     @include padding-side(41px);
 
     @media (min-width: 1200px) {
       font-size: 50px;
 
-      @include padding-side(350px);
-      padding-top: 23px;
+      @include padding-side(135px);
+      padding-top: 41px;
       line-height: 58px;
     }
   }

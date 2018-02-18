@@ -1,28 +1,41 @@
 .advantages {
   text-align: center;
   padding-top: 40px;
-  background-color: $secondary-bgColor;
+  background-color: $primary-bgColor;
+
+  @media (min-width: 660px) {
+    padding-top: 59px;
+  }
 
   @media (min-width: 1200px) {
     padding-top: 72px;
   }
 }
 
+.advantages__background {
+  background-color: $secondary-bgColor;
+}
+
 .advantages__wrapper {
   background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-position: center 435px;
+  background-position: center 428px;
   background-repeat: no-repeat;
-  min-height: 720px;
+  min-height: 706px;
 
   @media (min-width: 660px) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
     display: flex;
     min-height: auto;
     justify-content: flex-end;
-    background-position: 10px 40px;
+    background-position: 0 0;
+    background-size: 270px;
+    padding-top: 55px;
+    padding-bottom: 6px;
 
     @media (min-width: 1200px) {
       background-image: none;
       justify-content: space-around;
+      padding-top: 0;
 
       // @include padding-side(120px);
     }
@@ -33,7 +46,11 @@
   margin-bottom: 110px;
 
   @media (min-width: 660px) {
-    margin-bottom: 105px;
+    margin-bottom: 50px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 80px;
+    }
   }
 }
 
@@ -42,6 +59,7 @@
   font-weight: lighter;
   margin-top: 0;
   line-height: 30px;
+  margin-bottom: 26px;
 
   @media (min-width: 660px) {
     font-size: 40px;
@@ -79,21 +97,23 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
 
   @media (min-width: 660px) {
+    padding-left: 30px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     width: 300px;
     text-align: left;
 
     @media (min-width: 1200px) {
-      width: auto;
+      width: 940px;
       flex-direction: row;
       justify-content: space-between;
       flex-grow: 1;
       margin-bottom: 40px;
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -105,7 +125,7 @@
     margin-bottom: 0;
 
     @media (min-width: 1200px) {
-      width: 250px;
+      width: 300px;
       text-align: center;
     }
   }
@@ -118,6 +138,7 @@
   @media (min-width: 1200px) {
     display: block;
     margin: 0 auto;
+    height: 302px;
   }
 }
 
@@ -129,6 +150,9 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 24px;
+    margin-top: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -136,9 +160,15 @@
   line-height: 24px;
   font-size: 14px;
 
+  @media (min-width: 660px) {
+    margin-top: 13px;
+  }
+
   @media (min-width: 1200px) {
     font-size: 18px;
     line-height: 30px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 }
 
