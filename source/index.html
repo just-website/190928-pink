@@ -11,33 +11,35 @@
 
   <header class="page-header page-header--index">
     <div class="page-header__top">
-      <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="/img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="/img/logo-pink-white-tablet.svg">
-            <img src="/img/logo-pink-white-mobile.svg" alt="Pink logo">
-          </picture>
-          Pink
-        </a>
-        <button class="main-nav__button"></button>
+      <div class="page-header__container">
+        <div class="page-header__wrapper">
+          <a href="#" class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="/img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="/img/logo-pink-white-tablet.svg">
+              <img src="/img/logo-pink-white-mobile.svg" alt="Pink logo">
+            </picture>
+            Pink
+          </a>
+          <button class="main-nav__button"></button>
+        </div>
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
     </div>
 
     <div class="page-header__wrapper
@@ -163,42 +165,44 @@
     </section>
 
     <section class="review slider">
-      <h2 class="visually-hidden">
-        Отзывы о приложении.
-      </h2>
-      <ul class="review__list slider__list">
-        <li class="review__item slider__item slider__item--active">
-          <h3 class="review__author">
-            Пётр Николаев
-          </h3>
-          <p class="review__about">12 лет, full stack senior web developer</p>
-          <p class="review__description">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
-        </li>
-        <li class="review__item slider__item">
-          <h3 class="review__author">
-            Николай Петров
-          </h3>
-          <p class="review__about">25 лет, водитель трамвая</p>
-          <p class="review__description">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
-        </li>
-        <li class="review__item slider__item">
-          <h3 class="review__author">
-            Третий отзыв
-          </h3>
-          <p class="review__about">безработный пенсионер</p>
-          <p class="review__description">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
-        </li>
-      </ul>
-      <div class="slider__toggles">
-        <button class="slider__toggle slider__toggle--active">1</button>
-        <button class="slider__toggle">2</button>
-        <button class="slider__toggle">3</button>
+      <div class="container">
+        <h2 class="visually-hidden">
+          Отзывы о приложении.
+        </h2>
+        <ul class="review__list slider__list">
+          <li class="review__item slider__item slider__item--active">
+            <h3 class="review__author">
+              Пётр Николаев
+            </h3>
+            <p class="review__about">12 лет, full stack senior web developer</p>
+            <p class="review__description">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+          <li class="review__item slider__item">
+            <h3 class="review__author">
+              Николай Петров
+            </h3>
+            <p class="review__about">25 лет, водитель трамвая</p>
+            <p class="review__description">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+          <li class="review__item slider__item">
+            <h3 class="review__author">
+              Третий отзыв
+            </h3>
+            <p class="review__about">безработный пенсионер</p>
+            <p class="review__description">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </li>
+        </ul>
+        <div class="slider__toggles">
+          <button class="slider__toggle slider__toggle--active">1</button>
+          <button class="slider__toggle">2</button>
+          <button class="slider__toggle">3</button>
+        </div>
       </div>
     </section>
 
