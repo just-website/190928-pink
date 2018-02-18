@@ -62,11 +62,13 @@
 
 .form-registry__section--name-info {
   padding-bottom: 27px;
+  padding-top: 20px;
 
   @media (min-width: 660px) {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
+    padding-top: 37px;
 
     @media (min-width: 1200px) {
       flex-grow: 1;

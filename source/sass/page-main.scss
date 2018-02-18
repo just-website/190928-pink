@@ -14,10 +14,10 @@
   margin-bottom: 5px;
 
   @media (min-width: 660px) {
-    padding-top: 75px;
+    padding-top: 45px;
 
     @media (min-width: 1200px) {
-      margin-bottom: 72px;
+      margin-bottom: 60px;
     }
   }
 }
@@ -26,6 +26,14 @@
   padding-left: 35px;
   padding-right: 35px;
   margin-bottom: 49px;
+
+  @media (min-width: 660px) {
+    min-height: 134px;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .page-main__description {
@@ -41,7 +49,7 @@
     @include padding-side(60px);
 
     @media (min-width: 1200px) {
-      @include padding-side(80px);
+      // @include padding-side(23%);
       display: inline-block;
     }
   }
