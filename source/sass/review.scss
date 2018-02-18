@@ -12,6 +12,44 @@
   @media (min-width: 1200px) {
     margin-bottom: 40px;
     padding-bottom: 25px;
+    padding-top: 40px;
+    // background-image: url("../img/icon-quotes.svg");
+    // background-repeat: no-repeat;
+    // background-position: center 70px;
+  }
+}
+
+.review__quotes {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+  width: 50px;
+  // height: 150px;
+  margin: 0 auto;
+}
+
+.review__slider {
+  display: none;
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #bec2c7;
+    transform: rotate(45deg);
+    left: 0;
+    top: 150px;
+  }
+}
+
+.review__slider--right {
+  @media (min-width: 1200px) {
+    right: 0;
+    top: 150px;
+    transform: rotate(-45deg);
+    background-color: red;
   }
 }
 
@@ -22,6 +60,10 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
+
+  @media (min-width: 1200px) {
+    position: relative;
+  }
 }
 
 .review__item {

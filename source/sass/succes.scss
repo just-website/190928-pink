@@ -13,16 +13,24 @@
 }
 
 .succes__title {
-  font-size: 30px;
-  line-height: 40px;
   margin-top: 0;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 660px) {
+    line-height: 40px;
+    font-size: 30px;
+  }
 }
 
 .succes__discription {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;
+  margin-bottom: 40px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+  }
 }
 
 .succes__button {
